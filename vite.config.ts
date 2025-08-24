@@ -9,20 +9,20 @@ export default defineConfig(({ mode }) => {
     plugins: [react()],
     define: {
       'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
-      'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
+      'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
     },
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, '.'),
-      },
+        '@': path.resolve(__dirname, '.')
+      }
     },
     preview: {
-      host: true, // bind to 0.0.0.0 so Render detects the port
+      host: true, // bind to 0.0.0.0
       port: Number(process.env.PORT) || 4173,
-      allowedHosts: ['cfml-formatter-pro-1.onrender.com', 'localhost'],
+      allowedHosts: ['cfml-formatter-pro-1.onrender.com', 'localhost']
     },
     server: {
-      host: true, // optional for local dev
-    },
+      host: true
+    }
   };
 });
