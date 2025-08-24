@@ -1,0 +1,5 @@
+{
+  "name": "CFML Formatter Pro",
+  "description": "A powerful, Prettier-like code formatter for CFML (ColdFusion Markup Language) built as an interactive web tool. It uses an AST-based approach to intelligently format mixed CFML, HTML, and SQL code, ensuring consistency and readability.",
+  "requestFramePermissions": []
+}
